@@ -29,7 +29,7 @@
             <select name="codigocliente" id="codigocliente" class="form-control" placeholder="Codigo do cliente"
             [(ngModel)] = "pedido.codigocliente" >
             <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.nome}}</option>
-       </select>
+            </select>
         </div>
 
         <div class="form-group">
