@@ -37,5 +37,5 @@ public class ClienteController {
 	public List<Cliente> listar(){
 		return clienteRepositorio.findAll();
 		
-	}
+	} 
 }
