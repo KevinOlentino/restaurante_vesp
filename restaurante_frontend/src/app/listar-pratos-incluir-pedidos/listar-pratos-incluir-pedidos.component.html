@@ -25,7 +25,7 @@
      
         
         <div class="form-group">
-            <label for="codigocliente">Codigo do cliente:</label>
+            <label for="codigocliente">Selecione o cliente:</label>
             <select name="codigocliente" id="codigocliente" class="form-control" placeholder="Codigo do cliente"
             [(ngModel)] = "pedido.codigocliente" >
             <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.nome}}</option>
