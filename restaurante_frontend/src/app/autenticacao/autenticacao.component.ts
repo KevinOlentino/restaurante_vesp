@@ -5,6 +5,8 @@ import { ServicologinService } from '../servicologin.service';
 import { Autorizar } from './Autorizar';
 import { Login } from './Login';
 import { Router } from '@angular/router';
+import { Cliente } from 'src/Cliente';
+import { ClienteService } from '../cliente.service';
 
 @Component({
   selector: 'app-autenticacao',
@@ -13,18 +15,20 @@ import { Router } from '@angular/router';
 })
 export class AutenticacaoComponent implements OnInit {
 
-
+  clientes: Cliente[] = [];
   login: Login = {codCliente:'', senha:''}
   autorizado: Autorizar = { autorizado: false }
   
   router: Router;
   
-  constructor( private servico: ServicologinService, router: Router) { this.router = router; }
+  constructor( private servico: ServicologinService, router: Router,
+    private servicocliente: ClienteService) { this.router = router; }
  
   ngOnInit(): void {
-
-
-    
+    this.servicocliente.listarClientes().subscribe(
+      dados =>this.clientes = dados,
+      error => console.log("Erro na busca do cliente")
+    )    
   }
 
   public autenticar(frm: NgForm){
@@ -50,7 +54,7 @@ export class AutenticacaoComponent implements OnInit {
        alert('Acesso não autorizado');
     }
 
-  }
+  }  
 
 
 }

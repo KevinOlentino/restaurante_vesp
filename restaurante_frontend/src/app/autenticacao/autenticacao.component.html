@@ -8,8 +8,10 @@
 
     <div class="form-group">
         <label for="codCliente">Codigo:</label>
-        <input type="text" id="codCliente" name="codCliente" class="form-control" placeholder="Codigo do cliente" 
-        [(ngModel)] ="login.codCliente" required />
+        <select type="text" id="codCliente" name="codCliente" class="form-control" placeholder="Codigo do cliente" 
+        [(ngModel)] ="login.codCliente" required>
+        <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.nome}}</option>
+    </select>
     </div>
 
     <div class="form-group">
