@@ -11,8 +11,12 @@
 
         <div class="form-group">
             <label for="codigocliente">Código do cliente: </label>
-            <input type="text" id="codigocliente" name="codigocliente" class="form-control" placeholder="Código do cliente"[(ngModel)] = "pagamento.codigocliente" required />
+            <select name="codigocliente" id="codigocliente" class="form-control" placeholder="Codigo do cliente"
+            [(ngModel)] = "pagamento.codigocliente" >
+            <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.nome}}</option>
+            </select>
         </div>
+
         <div class="form-group">
             <label for="valorpago">Valor: </label>
             <input type="text" id="valorpago" name="valorpago" class="form-control" placeholder="Valor"[(ngModel)] = "pagamento.valorpago" required />
