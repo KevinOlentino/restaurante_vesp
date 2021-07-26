@@ -1,0 +1,25 @@
+<div class="container">
+
+    <h1>Lista de Pratos Prontos</h1>       
+
+    <div id="demo" class="collapse"></div>
+    <table class="table table-light table-striped">
+      <thead>
+        <tr>
+          <th>Código do Pedido</th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let pratoPronto of pratoPronto">
+          <td>{{ pratoPronto.codigopedido }}</td>
+          <td>{{ pratoPronto.nome }}</td>
+          <td>{{ pratoPronto.descricao }}</td>
+
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>

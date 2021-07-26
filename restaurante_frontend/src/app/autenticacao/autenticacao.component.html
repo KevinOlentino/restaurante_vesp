@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Login</p>
+<div class="container">
+<form method="POST" #frm="ngForm" (ngSubmit)="autenticar(frm)">
+
+    <div class="form-group">
+        <label for="codCliente">Codigo:</label>
+        <input type="text" id="codCliente" name="codCliente" class="form-control" placeholder="Codigo do cliente" 
+        [(ngModel)] ="login.codCliente" required />
+    </div>
+
+    <div class="form-group">
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" class="form-control" placeholder="senha"
+        [(ngModel)] = "login.senha" required />
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">Acessar</button>
+
+</form>
+</div>
+</body>
+
+</html>

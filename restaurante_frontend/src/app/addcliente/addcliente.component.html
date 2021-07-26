@@ -1,0 +1,25 @@
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Adicionar Novo Cliente</span>
+      </nav>
+    <form method="POST" #frm="ngForm" (ngSubmit)="incluirCliente(frm)">
+
+        <div class="form-group">
+            <label for="nome">Nome do Cliente:</label>
+            <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do cliente"[(ngModel)] = "cliente.nome" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail: </label>
+            <input type="text" id="email" name="email" class="form-control" placeholder="E-mail"[(ngModel)] = "cliente.email" required />
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha"[(ngModel)] = "cliente.senha" required />
+        </div>
+        
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">Salvar</button>
+        </div>
+    </form>
+</div>

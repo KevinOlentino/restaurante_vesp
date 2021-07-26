@@ -1,0 +1,25 @@
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Adicionar Novo Pagamento</span>
+      </nav>
+    <form method="POST" #frm="ngForm" (ngSubmit)="incluirPagamento(frm)">
+
+        <div class="form-group">
+            <label for="codigopedido">Código do pedido:</label>
+            <input type="text" id="codigopedido" name="codigopedido" class="form-control" placeholder="Código do pedido"[(ngModel)] = "pagamento.codigopedido" required />
+        </div>
+
+        <div class="form-group">
+            <label for="codigocliente">Código do cliente: </label>
+            <input type="text" id="codigocliente" name="codigocliente" class="form-control" placeholder="Código do cliente"[(ngModel)] = "pagamento.codigocliente" required />
+        </div>
+        <div class="form-group">
+            <label for="valorpago">Valor: </label>
+            <input type="text" id="valorpago" name="valorpago" class="form-control" placeholder="Valor"[(ngModel)] = "pagamento.valorpago" required />
+        </div>
+        
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">Salvar</button>
+        </div>
+    </form>
+</div>
