@@ -23,9 +23,9 @@ public class UtilControllerTest2 {
 	private UtilController utilcont;
 	
 	@Test
-	void utilTest2() {
+	void testpi() {
 		double expected;
-		double result; 
+		double result;
 		
 		expected = 3.14159;
 		result = utilcont.pi();
@@ -39,7 +39,7 @@ public class UtilControllerTest2 {
 	}
 	
 	@Test
-	void util2Test2() {
+	void testListarPratos() {
 		long expected;
 		long result;
 		List<Prato> pratos = pratocont.listarprato();
