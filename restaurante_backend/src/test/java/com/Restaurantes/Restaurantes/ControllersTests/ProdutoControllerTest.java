@@ -33,33 +33,24 @@ class ProdutoControllerTest {
 		
 		System.out.println("Teste de Listar Produtos: Expectativa:" + expected + "resultado: "+ result);
 		if (result == expected) {
-			System.out.println("OK");
+			System.out.println(" OK");
 		}else {
-			System.out.println("FALHA");
+			System.out.println(" FALHA");
 		}
 		assertThat(result).isEqualTo(expected);
 	}
 		
 	@Test
-	void testIncluir() {
-		Produto novo = new Produto();
-		novo.setCodigo(0);
-		novo.setNome("Agrotoxico");
-		novo.setPreco(17.90);
-		novo.setQuantidade(2);
-		
-		long expected = repositorio.count()+1;
-		repositorio.save(novo);
-		repositorio.flush();
-		
-		long result = repositorio.count();
-		System.out.println("Testando inclusão de clientes. Expectativa: " + expected + "resuldado: " + result);
-		if (result == expected) {
-			System.out.println(" OK");
-		}else { 
-			System.out.println(" FAIL");
+	void testContarProduto() {
+		try {
+			long expected = repositorio.count();
+			long result = controller.quant_Produto();
+			
+			System.out.println("Teste de Produtos: esperado: " + expected + "  resultado: " + result);
+			assertThat(result).isEqualTo(expected);
+		}catch(Exception ex){
+			fail("erro ao realizar teste: " + ex.getMessage());
 		}
-		assertThat(result).isEqualTo(expected);
-	}	
+	}
 
 }

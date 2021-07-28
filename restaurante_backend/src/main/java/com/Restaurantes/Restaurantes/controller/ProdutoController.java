@@ -26,10 +26,9 @@ public class ProdutoController {
 	public  List<Produto> listarproduto(){		
 		return repositorio.findAll();
 	}
-	@PostMapping ("incluir")
-    public void incluir (@RequestBody Produto novoProduto) {
-    	repositorio.save(novoProduto);
-    	repositorio.flush();
-    }    
-
+	@GetMapping("qtd_produto")
+	public int quant_Produto() {
+		return (int) this.repositorio.count();
+	}
+		
 }
