@@ -28,6 +28,7 @@ public class UtilController {
 	@Autowired
 	private FaturamentoRepositorio fatrepo;
 
+	// test 1
 	@PostMapping("somar")
 	public double somar( double a, double b) {
 		double r;
@@ -35,32 +36,38 @@ public class UtilController {
 		return r;
 	}
 
+	// test 2
 	@GetMapping("pi")
 	public double pi() {
 		return 3.14159;
 	}
 	
+	// teste 3
 	@PostMapping("delta")
 	public double bx1( double a, double b, double c) {
 		double delta = (b*b) - 4 * a * c;
 		return delta;
 	}
 	
+	// test 1
 	@GetMapping("qtd_clientes")
 	public int quant_cliente() {
 		return (int) this.clirepo.count();
 	}
 			
+	// test 2
 	@GetMapping("qtd_pratos")
 	public int quant_prato() {
 		return (int) prarepo.count();
 	}
 			
+	// test 3
 	@GetMapping("qtd_pedidos")
 	public int quant_pedido() {
 		return (int) pedrepo.count();
 	}
 
+	// test 1
 	@GetMapping("totalpedidos")
 	public double totalPedidos() {
 		
@@ -72,7 +79,6 @@ public class UtilController {
 		
 		return soma;
 	}
-	
 
 	@GetMapping("totalfaturamento")
 	public Double totalFaturamento() {
