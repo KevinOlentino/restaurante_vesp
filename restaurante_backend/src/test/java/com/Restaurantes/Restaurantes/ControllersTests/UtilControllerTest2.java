@@ -25,7 +25,7 @@ public class UtilControllerTest2 {
 	@Test
 	void utilTest2() {
 		double expected;
-		double result;
+		double result; 
 		
 		expected = 3.14159;
 		result = utilcont.pi();
