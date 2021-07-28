@@ -6,6 +6,7 @@ import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
+import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { PrincipalComponent } from './principal/principal.component';
 
@@ -16,8 +17,9 @@ const routes: Routes = [
 {path: 'listarpratopronto', component: ListarpratoprontoComponent},
 {path:'listarfaturamento', component:ListarFaturamentoComponent},
 {path:'listarpratosincluirpedidos', component:ListarPratosIncluirPedidosComponent},
-{path: "login", component: AutenticacaoComponent},
-{path:'incluirpratos', component:IncluirPratosComponent}
+{path: 'login', component: AutenticacaoComponent},
+{path:'incluirpratos', component:IncluirPratosComponent},
+{path: 'listarproduto', component: ListarProdutoComponent}
 
 ];
 
