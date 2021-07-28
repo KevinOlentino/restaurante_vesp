@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClient, HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddclienteComponent } from './addcliente/addcliente.component';
@@ -12,6 +12,7 @@ import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturame
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
+import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.componen
     ListarFaturamentoComponent,
     ListarPratosIncluirPedidosComponent,
     AutenticacaoComponent,
-    IncluirPratosComponent
+    IncluirPratosComponent,
+    ListarProdutoComponent
 
   ],
   imports: [
