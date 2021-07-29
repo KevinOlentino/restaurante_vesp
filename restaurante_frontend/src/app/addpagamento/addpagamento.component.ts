@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Cliente } from 'src/Cliente';
-import { Pagamento } from 'src/Pagamento';
+import { Cliente } from 'src/app/entities/Cliente';
+import { Pagamento } from 'src/app/entities/Pagamento';
 import { AddpagamentoService } from '../addpagamento.service';
 import { ClienteService } from '../cliente.service';
 

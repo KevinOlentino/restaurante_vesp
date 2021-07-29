@@ -21,6 +21,7 @@ const routes: Routes = [
 {path:'incluirpratos', component:IncluirPratosComponent},
 {path: 'listarproduto', component: ListarProdutoComponent}
 
+
 ];
 
 @NgModule({

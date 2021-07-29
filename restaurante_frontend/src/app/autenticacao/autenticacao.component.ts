@@ -5,7 +5,7 @@ import { ServicologinService } from '../servicologin.service';
 import { Autorizar } from './Autorizar';
 import { Login } from './Login';
 import { Router } from '@angular/router';
-import { Cliente } from 'src/Cliente';
+import { Cliente } from 'src/app/entities/Cliente';
 import { ClienteService } from '../cliente.service';
 
 @Component({

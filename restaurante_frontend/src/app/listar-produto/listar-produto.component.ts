@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProdutoQuantidade } from '../entities/ProdutoQuantidade';
 import { PratoService } from '../prato.service';
+import { ProdutoQuantidadeService } from '../produto-quantidade.service';
 import { ProdutoServicoService } from '../produto-servico.service';
 import { Produto } from './Produto';
 
@@ -11,12 +13,20 @@ import { Produto } from './Produto';
 export class ListarProdutoComponent implements OnInit {
 
   produtos: Produto[] = [];
-  constructor(private servicoproduto:ProdutoServicoService,) { }
+  produtoQuantidade: ProdutoQuantidade = { quantidade: 0};
+
+  constructor(private servicoproduto:ProdutoServicoService,
+              private servicoProdutoQuantidade: ProdutoQuantidadeService) { }
 
   ngOnInit(): void {
     this.servicoproduto.listarproduto().subscribe(
       dados => this.produtos = dados,
       error => console.log("Erro ao buscar dados")
+    )
+
+    this.servicoProdutoQuantidade.quantidade().subscribe(
+      dados => this.produtoQuantidade = dados,
+      error => console.log("Erro ao recuperar produto quantidade")
     )
   }
 }

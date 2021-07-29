@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PratoPronto } from 'src/PratoPronto';
+import { PratoPronto } from '../entities/PratoPronto';
 import { ListarpratoprontoService } from '../listarpratopronto.service';
 
 @Component({
