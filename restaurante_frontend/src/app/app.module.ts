@@ -13,6 +13,7 @@ import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-ped
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
+import { ContarProdutoComponent } from './contar-produto/contar-produto.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
     ListarPratosIncluirPedidosComponent,
     AutenticacaoComponent,
     IncluirPratosComponent,
-    ListarProdutoComponent
+    ListarProdutoComponent,
+    ContarProdutoComponent
 
   ],
   imports: [
