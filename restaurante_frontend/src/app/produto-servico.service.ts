@@ -13,4 +13,9 @@ export class ProdutoServicoService {
   listarproduto(): Observable<any>{
     return this.produto.get<Produto[]>("http://localhost:8080/produto/listar")
   }
+  contarProduto(): Observable<any>{
+    return this.produto.get<Produto[]>("http://localhost:8080/produto/qtd_produto")
+  }
+
+
 }
