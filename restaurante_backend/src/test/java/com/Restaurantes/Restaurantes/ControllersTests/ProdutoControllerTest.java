@@ -44,10 +44,11 @@ class ProdutoControllerTest {
 	@Test
 	void testContarProduto() {
 		try {
-			ProdutoQuantidade result = new ProdutoQuantidade();
+			ProdutoQuantidade algo = new ProdutoQuantidade();
 			
-			long expected = repositorio.count();
-			result = controller.quant_Produto();
+			float expected = repositorio.count();
+			algo = controller.quant_Produto();
+			float result = algo.getQuantidade();
 			
 			System.out.println("Teste de Produtos: esperado: " + expected + "  resultado: " + result);
 			assertThat(result).isEqualTo(expected);
