@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.Restaurantes.Restaurantes.controller.ProdutoController;
 import com.Restaurantes.Restaurantes.entity.Produto;
+import com.Restaurantes.Restaurantes.entity.ProdutoQuantidade;
 import com.Restaurantes.Restaurantes.repositorio.ProdutoRepositorio;
 
 
@@ -31,7 +32,7 @@ class ProdutoControllerTest {
 		expected = repositorio.count();
 		result = produtos.size();
 		
-		System.out.println("Teste de Listar Produtos: Expectativa:" + expected + "resultado: "+ result);
+		System.out.println("Teste de Listar Produtos: Expectativa: " + expected + "resultado: "+ result);
 		if (result == expected) {
 			System.out.println(" OK");
 		}else {
@@ -43,8 +44,10 @@ class ProdutoControllerTest {
 	@Test
 	void testContarProduto() {
 		try {
+			ProdutoQuantidade result = new ProdutoQuantidade();
+			
 			long expected = repositorio.count();
-			long result = controller.quant_Produto();
+			result = controller.quant_Produto();
 			
 			System.out.println("Teste de Produtos: esperado: " + expected + "  resultado: " + result);
 			assertThat(result).isEqualTo(expected);
