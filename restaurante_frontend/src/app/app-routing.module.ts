@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
-import { ContarProdutoComponent } from './contar-produto/contar-produto.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
@@ -20,8 +19,7 @@ const routes: Routes = [
 {path:'listarpratosincluirpedidos', component:ListarPratosIncluirPedidosComponent},
 {path: 'login', component: AutenticacaoComponent},
 {path:'incluirpratos', component:IncluirPratosComponent},
-{path: 'listarproduto', component: ListarProdutoComponent},
-{path: 'contarproduto', component: ContarProdutoComponent}
+{path: 'listarproduto', component: ListarProdutoComponent}
 
 ];
 
