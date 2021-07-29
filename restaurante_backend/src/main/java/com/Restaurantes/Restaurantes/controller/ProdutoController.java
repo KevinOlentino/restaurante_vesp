@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Restaurantes.Restaurantes.entity.Produto;
+import com.Restaurantes.Restaurantes.entity.ProdutoQuantidade;
 import com.Restaurantes.Restaurantes.repositorio.ProdutoRepositorio;
 
 
@@ -27,8 +28,12 @@ public class ProdutoController {
 		return repositorio.findAll();
 	}
 	@GetMapping("qtd_produto")
-	public int quant_Produto() {
-		return (int) this.repositorio.count();
+	public ProdutoQuantidade quant_Produto() {
+		
+		ProdutoQuantidade pq = new ProdutoQuantidade();
+		pq.setQuantidade(this.repositorio.count());
+
+		return pq;
 	}
 		
 }

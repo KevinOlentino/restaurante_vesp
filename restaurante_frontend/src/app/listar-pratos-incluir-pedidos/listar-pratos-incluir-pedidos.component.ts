@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Cliente } from 'src/Cliente';
+import { Cliente } from 'src/app/entities/Cliente';
 import { ClienteService } from '../cliente.service';
 import { PedidoService } from '../pedido.service';
 import { PratoService } from '../prato.service';
