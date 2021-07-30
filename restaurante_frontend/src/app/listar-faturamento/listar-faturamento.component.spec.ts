@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListarFaturamentoComponent } from './listar-faturamento.component';
@@ -8,7 +9,8 @@ describe('ListarFaturamentoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListarFaturamentoComponent ]
+      declarations: [ ListarFaturamentoComponent ],
+      imports: [HttpClientTestingModule]
     })
     .compileComponents();
   });
