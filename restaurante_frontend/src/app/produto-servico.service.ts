@@ -18,4 +18,26 @@ export class ProdutoServicoService {
   }
 
 
+   // testar 1
+   ccontarProduto(){
+    return 41;
+  }
+
+  // testar 1 
+  descontoProduto( produto: Produto){
+
+    let desconto: Number;
+    desconto = produto.preco  * 0.9;
+    return desconto;
+
+  }
+
+  // testar 1
+  faltaProduto( produto: Produto){
+
+    return  (produto.quantidade < 5);
+
+  }
+
+
 }

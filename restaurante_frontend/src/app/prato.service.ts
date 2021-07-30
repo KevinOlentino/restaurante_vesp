@@ -17,4 +17,27 @@ export class PratoService {
   incluir(prato:Prato): Observable<any>{
     return this._cliente.post<Prato>("http://localhost:8080/prato/incluir",prato);
   }
+
+  // testar 3
+  descontoPrato( prato: Prato){
+    let desconto: number  = prato.preco * 0.8;
+    return desconto;
+  }
+
+// testar 3
+  contarPrato(){
+    return 35;
+  }
+
+// testar 3
+   pratoGratis( prato: Prato){
+
+    if (prato.descricao === "Peixe")
+    {
+        prato.preco = 0;
+    }
+    return prato;
+  }
+
+  
 }

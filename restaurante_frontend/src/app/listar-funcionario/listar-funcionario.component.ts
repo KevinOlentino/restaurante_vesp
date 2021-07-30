@@ -13,6 +13,7 @@ export class ListarFuncionarioComponent implements OnInit {
   constructor(private servico: FuncionarioService) { }
 
   ngOnInit(): void {
+
     this.servico.listarfuncionario().subscribe(
       dados => { this.funcionario = dados},
       error => alert("Erro ao consultar dados!!")

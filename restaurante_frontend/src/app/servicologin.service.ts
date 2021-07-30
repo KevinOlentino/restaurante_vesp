@@ -18,8 +18,32 @@ export class ServicologinService {
     
    }
 
-   somar(a: number, b: number){
-     return a+b;
-   }
+   somar( a: number, b: number){
+    return a+b;
+  }
+
+
+  // testar 2
+  testarLogin(usuario: string, senha: string){
+
+    if (usuario === "fulano" && senha === "65432")
+       return true;
+    else
+      return false;
+  }
+
+  // testar 2
+  usuarioAutorizado(){
+    return true;
+  }
+
+  // testar 2
+  usuarioNaoAutorizado( nome: string ){
+    if (nome ==="beltrano"){
+      return false;
+    } else {
+      return true;
+    }
+  }
     
 }
