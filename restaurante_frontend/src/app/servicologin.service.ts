@@ -10,7 +10,7 @@ import { Login } from './autenticacao/Login';
 export class ServicologinService {
 
   
-  constructor( private servico:HttpClient) { }
+  constructor(private servico:HttpClient) { }
 
    fazerLogin(login: Login): Observable<any>{
 

@@ -1,31 +1,31 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { ComponentFixture, TestBed, tick } from '@angular/core/testing';
-import { Autorizar } from './autenticacao/Autorizar';
-import { Login } from './autenticacao/Login';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TestBed } from '@angular/core/testing';
 import { ServicologinService } from './servicologin.service';
 
-describe('ServicologinService', () => {
+describe('Teste de ServicologinService', () => {
 
-  let fixture: ComponentFixture<ServicologinService>;
   let service: ServicologinService;
-  let login: Login = {codCliente:'1', senha:'a'};
-  let autorizado: Autorizar = {autorizado: false};
-
  
   beforeEach(() => { 
 
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      providers: [ServicologinService]
+      imports: [HttpClientTestingModule]
     });
 
     service = TestBed.inject(ServicologinService);
    
   });
 
-  it('Deveria ser criado', () => {
-
+  it('1 Teste - Deve ser criado', () => {
     expect(service).toBeTruthy();
+  });
+
+
+  it('2 - Segundo teste', () => {
+
+   
+    expect(1).toEqual(1);
   });
 
 });

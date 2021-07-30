@@ -1,4 +1,6 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 import { AddclienteComponent } from './addcliente.component';
 
 describe('AddclienteComponent', () => {
@@ -7,7 +9,9 @@ describe('AddclienteComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule, FormsModule],
       declarations: [ AddclienteComponent ]
+
     })
     .compileComponents();
   });
@@ -18,7 +22,7 @@ describe('AddclienteComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Deve ser criado', () => {
     expect(component).toBeTruthy();
   });
 });
