@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { getNumberOfCurrencyDigits } from '@angular/common';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { ServicologinService } from './servicologin.service';
@@ -23,8 +23,10 @@ describe('Teste de ServicologinService', () => {
 
 
   it('2 - Segundo teste', () => {
-
-   
+    let a: number = 1;
+    let b: number = 2;
+    let retorno: number;
+    retorno = service.somar(a,b)
     expect(1).toEqual(1);
   });
 
