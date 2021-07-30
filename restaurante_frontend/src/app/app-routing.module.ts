@@ -19,7 +19,8 @@ const routes: Routes = [
 {path:'listarpratosincluirpedidos', component:ListarPratosIncluirPedidosComponent},
 {path: 'login', component: AutenticacaoComponent},
 {path:'incluirpratos', component:IncluirPratosComponent},
-{path: 'listarproduto', component: ListarProdutoComponent}
+{path: 'listarproduto', component: ListarProdutoComponent},
+{path: 'principal', component: PrincipalComponent}
 
 
 ];

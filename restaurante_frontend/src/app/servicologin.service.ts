@@ -14,9 +14,12 @@ export class ServicologinService {
 
    fazerLogin(login: Login): Observable<any>{
 
-    return this.servico.post<Autorizar>("http://localhost:8080/login/logar", login);
+      return this.servico.post<Autorizar>("http://localhost:8080/login/logar", login);
     
-    
-    }
+   }
+
+   somar(a: number, b: number){
+     return a+b;
+   }
     
 }
