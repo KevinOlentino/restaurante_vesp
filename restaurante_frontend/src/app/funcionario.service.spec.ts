@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
 import { FuncionarioService } from './funcionario.service';
@@ -6,7 +7,9 @@ describe('FuncionarioService', () => {
   let service: FuncionarioService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule] //Bruno
+    });
     service = TestBed.inject(FuncionarioService);
   });
 

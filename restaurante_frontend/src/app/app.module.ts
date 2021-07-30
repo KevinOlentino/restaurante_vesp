@@ -4,7 +4,7 @@ import { HttpClient, HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddclienteComponent } from './addcliente/addcliente.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
@@ -32,7 +32,8 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgForm
   ],
   providers: [],
   bootstrap: [AppComponent]
