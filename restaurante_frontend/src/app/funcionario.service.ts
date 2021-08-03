@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Funcionario } from 'src/Funcionario';
+import { Funcionario } from 'src/app/entities/Funcionario';
 
 @Injectable({
   providedIn: 'root'

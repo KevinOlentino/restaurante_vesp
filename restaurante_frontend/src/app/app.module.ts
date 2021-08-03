@@ -13,6 +13,7 @@ import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-ped
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
+import { ListarPagamentoClienteComponent } from './listar-pagamento-cliente/listar-pagamento-cliente.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,14 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
     AutenticacaoComponent,
     IncluirPratosComponent,
     ListarProdutoComponent,
+    ListarPagamentoClienteComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    NgForm
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
