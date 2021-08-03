@@ -14,14 +14,14 @@ public class ListarClienteOrdemAlfabetica {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="codigocliente")
-	private Integer Codigocliente;
+	private Integer codigocliente;
 	@Column(name="nome")
 	private String nome;
 	public Integer getCodigocliente() {
-		return Codigocliente;
+		return codigocliente;
 	}
 	public void setCodigocliente(Integer codigocliente) {
-		Codigocliente = codigocliente;
+		this.codigocliente = codigocliente;
 	}
 	public String getNome() {
 		return nome;
