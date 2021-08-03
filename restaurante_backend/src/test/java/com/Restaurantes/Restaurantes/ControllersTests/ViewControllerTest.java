@@ -2,13 +2,10 @@ package com.Restaurantes.Restaurantes.ControllersTests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import com.Restaurantes.Restaurantes.controller.ViewController;
 import com.Restaurantes.Restaurantes.repositorio.ViewPagamentoClienteRepositorio;
 import com.Restaurantes.Restaurantes.views.ViewPagamentoCliente;
@@ -30,14 +27,12 @@ class ViewControllerTest {
 			long expected = repositorioPagamentoCliente.count();
 			List<ViewPagamentoCliente> lista = viewController.ListarPagamentoCliente();
 			long result = lista.size();
+			System.out.println("Teste de Listar clientes ordem Alfabetica " + expected + " resultado: "+ result);
 			
 			assertThat(result).isEqualTo(expected);
 			
 		} catch( Exception ex) {
 			fail("Erro ao Listar Pagamento");	
-		}
-		
-		
+		}		
 	}
-
 }
