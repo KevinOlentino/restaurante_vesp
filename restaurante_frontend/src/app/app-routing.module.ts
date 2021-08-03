@@ -26,7 +26,7 @@ const routes: Routes = [
 {path: 'listarproduto', component: ListarProdutoComponent},
 {path: 'principal', component: PrincipalComponent},
 {path: 'listarpagamentocliente', component: ListarPagamentoClienteComponent},
-{path: 'listarpratoporproduto', component: ListarPratoPorProdutoComponent}
+{path: 'listarpratoporproduto', component: ListarPratoPorProdutoComponent},
 {path: 'listarclientesordem', component: ListarClientesOrdemAlfaComponent},
 {path: 'quantidadepratosporpedido', component: QuantidadePratosPorPedidoComponent}
 
