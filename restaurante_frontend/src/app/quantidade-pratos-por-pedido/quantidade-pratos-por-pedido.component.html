@@ -1,0 +1,22 @@
+<div class="container">
+
+    <h1>Quantidade de Pratos por Pedido</h1>       
+
+    <div id="demo" class="collapse"></div>
+    <table class="table table-light table-striped">
+      <thead>
+        <tr>
+          <th>Código do Pedido</th>
+          <th>Quantidade de Pratos</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let quantidadePratosPorPedido of quantidadePratosPorPedido">
+          <td>{{ quantidadePratosPorPedido.codigoPedido }}</td>
+          <td>{{ quantidadePratosPorPedido.qntPratosPorPedido }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -11,6 +11,7 @@ import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-ped
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { QuantidadePratosPorPedidoComponent } from './quantidade-pratos-por-pedido/quantidade-pratos-por-pedido.component';
 
 const routes: Routes = [
 {path: '', component: PrincipalComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
 {path: 'listarproduto', component: ListarProdutoComponent},
 {path: 'principal', component: PrincipalComponent},
 {path: 'listarpagamentocliente', component: ListarPagamentoClienteComponent},
-{path: 'listarclientesordem', component: ListarClientesOrdemAlfaComponent}
+{path: 'listarclientesordem', component: ListarClientesOrdemAlfaComponent},
+{path: 'quantidadepratosporpedido', component: QuantidadePratosPorPedidoComponent}
 
 
 ];
