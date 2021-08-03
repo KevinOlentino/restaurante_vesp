@@ -1,0 +1,23 @@
+<div class="container">
+    <p>Listar Clientes Ordem Alfabetica</p>   
+    <tr>
+        <td></td>
+      <td align="center"><a class="btn btn-primary" href="#" role="button"><i class="fa fa-home"></i> Voltar Principal &nbsp;</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Codigo Cliente</th>
+            <th>Nome</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let listarclientes of listarclientes">
+            <td>{{listarclientes.codigocliente}}</td>
+            <td>{{listarclientes.nome}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
