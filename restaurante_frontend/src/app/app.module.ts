@@ -14,6 +14,7 @@ import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { ListarPagamentoClienteComponent } from './listar-pagamento-cliente/listar-pagamento-cliente.component';
+import { ListarPratoPorProdutoComponent } from './listar-prato-por-produto/listar-prato-por-produto.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ListarPagamentoClienteComponent } from './listar-pagamento-cliente/list
     IncluirPratosComponent,
     ListarProdutoComponent,
     ListarPagamentoClienteComponent,
+    ListarPratoPorProdutoComponent,
 
   ],
   imports: [
