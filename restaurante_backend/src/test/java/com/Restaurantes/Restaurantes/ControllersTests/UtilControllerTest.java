@@ -16,8 +16,6 @@ import com.Restaurantes.Restaurantes.entity.Prato;
 import com.Restaurantes.Restaurantes.repositorio.ClienteRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.PedidoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.PratoRepositorio;
-import com.Restaurantes.Restaurantes.repositorio.SomaPrecoPedidoRepositorio;
-import com.Restaurantes.Restaurantes.views.SomaPrecoPedido;
 
 @SpringBootTest
 class UtilControllerTest {
@@ -167,6 +165,27 @@ class UtilControllerTest {
 		}catch(Exception ex){
 			fail("erro ao realizar teste: " + ex.getMessage());
 		}
+	}
+	
+	@Test
+	void testVelocidade() {
+		double expected;
+		double result;
+		
+		expected = utilcont.velocidade(100, 1);
+		result = 100;
+		System.out.println("A velocidade esperada é: " + expected + " e o resultado foi: " + result);
+		assertThat(result).isEqualTo(expected);
+	}
+	
+	@Test
+	void testfaturamento() {
+		double expected;
+		double result;
+		
+		expected = 625.02;
+		result = utilcont.totalFaturamento();
+		assertThat(result).isEqualTo(expected);
 	}
 	
 }
