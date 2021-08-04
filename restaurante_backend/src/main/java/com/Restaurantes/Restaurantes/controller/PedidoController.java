@@ -23,9 +23,12 @@ public class PedidoController {
 	public  List<Pedido> listarpedido(){		
 		return repositorio.findAll();
 	}
+	
 	@PostMapping ("incluir")
     public void incluir (@RequestBody Pedido novoPedido) {
     	repositorio.save(novoPedido);
     	repositorio.flush();
     }    
+	
+	
 }

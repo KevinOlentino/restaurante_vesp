@@ -19,8 +19,6 @@ public class PagamentoController {
 	
 	@PostMapping("incluir")
     public void salvar( @RequestBody Pagamento novoPagamento) {
-			System.out.println(novoPagamento.getCodigopedido());
-			System.out.println(novoPagamento.getCodigocliente());
 			this.pagamentoRepositorio.save(novoPagamento);
 	        this.pagamentoRepositorio.flush();     
     }
