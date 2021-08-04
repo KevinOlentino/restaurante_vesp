@@ -50,6 +50,7 @@ class PedidoControllerTest {
 		novo.setQuantidade(1.6);
 		novo.setPreco(20.30);
 		novo.setPronto(true);
+		novo.setCodigofuncionario(1);
 		
 		long expected = repositorio.count()+1;
 		
