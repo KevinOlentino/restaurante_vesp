@@ -22,10 +22,6 @@ public class Pagamento {
 	@NotNull
 	private int codigopedido;
 	
-	@Column(name="codigocliente")
-	@NotNull
-	private int codigocliente;
-	
 	@Column(name="valorpago")
 	@NotNull
 	private double valorpago;
@@ -44,14 +40,6 @@ public class Pagamento {
 
 	public void setCodigopedido(int codigopedido) {
 		this.codigopedido = codigopedido;
-	}
-
-	public int getCodigocliente() {
-		return codigocliente;
-	}
-
-	public void setCodigocliente(int codigocliente) {
-		this.codigocliente = codigocliente;
 	}
 
 	public double getValorpago() {
