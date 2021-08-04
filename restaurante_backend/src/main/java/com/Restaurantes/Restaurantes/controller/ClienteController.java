@@ -39,12 +39,4 @@ public class ClienteController {
 		return clienteRepositorio.findAll();
 		
 	} 
-	
-	
-	public List<Cliente> listarpornome() {
-		
-		List<Cliente> lista =  clienteRepositorio.buscar("joao");
-		return lista;
-		
-	}
 }
