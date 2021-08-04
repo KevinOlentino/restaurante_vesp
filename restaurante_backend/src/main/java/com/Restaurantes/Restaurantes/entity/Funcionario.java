@@ -25,8 +25,20 @@ public class Funcionario {
 	@Column(name="salario")
 	@NotNull
 	private double salario;
+	
+	@Column(name="codigosetor")
+	@NotNull
+	private int codigosetor;
 
 	
+	public int getCodigosetor() {
+		return codigosetor;
+	}
+
+	public void setCodigosetor(int codigosetor) {
+		this.codigosetor = codigosetor;
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}
