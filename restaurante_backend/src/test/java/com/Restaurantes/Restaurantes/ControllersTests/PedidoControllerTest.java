@@ -66,7 +66,6 @@ class PedidoControllerTest {
 		}
 		
 		assertThat(result).isEqualTo(expected);
-		
 	}
 
 }
