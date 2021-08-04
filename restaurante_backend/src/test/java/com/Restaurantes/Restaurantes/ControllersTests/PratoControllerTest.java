@@ -19,7 +19,7 @@ class PratoControllerTest {
 	private PratoController controlador;
 	
 	@Test
-	void testListar() {
+	void testListarprato() {
 		
 		
 		long expected;

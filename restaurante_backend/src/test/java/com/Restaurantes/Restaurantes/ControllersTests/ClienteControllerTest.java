@@ -35,7 +35,7 @@ class ClienteControllerTest {
 	}
 		
 	@Test
-	void testIncluir() {
+	void testSalvar() {
 		Cliente novo = new Cliente();
 		novo.setCodigocliente(0);
 		novo.setNome("Outro cliente");

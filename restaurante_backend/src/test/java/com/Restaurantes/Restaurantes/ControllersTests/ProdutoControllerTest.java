@@ -24,7 +24,7 @@ class ProdutoControllerTest {
 	private ProdutoController controller;
 
 	@Test
-	void testListar() {
+	void testListarproduto() {
 		long expected;
 		long result;
 		List<Produto> produtos = controller.listarproduto();
@@ -42,7 +42,7 @@ class ProdutoControllerTest {
 	}
 		
 	@Test
-	void testContarProduto() {
+	void testQuant_produto() {
 		try {
 			ProdutoQuantidade algo = new ProdutoQuantidade();
 			

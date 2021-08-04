@@ -24,7 +24,7 @@ class FuncionarioControllerTest {
 	private FuncionarioController funcionariocontroller;
 	
 	@Test
-	void testListar() {
+	void testListarfuncionario() {
 		try {
 			long expected;
 			long result;
@@ -46,7 +46,7 @@ class FuncionarioControllerTest {
 	}
 	
 	@Test
-	void testQuantidadeFuncionario() {
+	void testQuantidadefuncionario() {
 		try {
 			FuncionarioQuantidade algo = new FuncionarioQuantidade();
 			

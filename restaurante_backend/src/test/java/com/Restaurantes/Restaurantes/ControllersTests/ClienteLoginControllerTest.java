@@ -18,7 +18,7 @@ class ClienteLoginControllerTest {
 	private ClienteLoginController clientelogincontroller;
 	
 	@Test
-	void testClienteLogin() {
+	void testLogar() {
 		
 		try {
 		ClienteLogin clientelogin = new ClienteLogin();

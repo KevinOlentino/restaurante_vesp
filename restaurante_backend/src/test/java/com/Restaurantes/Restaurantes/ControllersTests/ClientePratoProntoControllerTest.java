@@ -20,7 +20,7 @@ class ClientePratoProntoControllerTest {
 	private ClientePratoProntoController controlador;
 	
 	@Test
-	void testListar() {
+	void testListarClientePratoPronto() {
 		
 		long expected;
 		long result;
