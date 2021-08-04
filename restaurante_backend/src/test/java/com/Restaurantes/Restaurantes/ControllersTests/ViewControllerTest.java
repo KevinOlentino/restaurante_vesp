@@ -49,7 +49,7 @@ class ViewControllerTest {
 	
 
 	@Test
-	void testListarOrdemAlfa() {
+	void testListarClienteOrdem() {
 		try {
 			long expected = repositorioOdemAlfa.count();
 			List<ListarClienteOrdemAlfabetica> lista = viewController.ListarClienteOrdem();
@@ -80,7 +80,7 @@ class ViewControllerTest {
 	}
 	
 	@Test
-	void testListarQntPratosPorPedido() {
+	void testListarQuantidadePratosPorPedido() {
 		
 		try {
 			

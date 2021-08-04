@@ -17,7 +17,7 @@ class FaturamentoTest {
 	private FaturamentoController controller;
 
 	@Test
-	void testFaturamento() {
+	void testListarfaturamento() {
 		long expectativa;
 		long resultado;
 		List<Faturamento> faturamento = controller.listarfaturamento();

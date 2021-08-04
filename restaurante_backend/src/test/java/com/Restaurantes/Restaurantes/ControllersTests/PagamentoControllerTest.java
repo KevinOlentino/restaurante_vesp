@@ -17,7 +17,7 @@ class PagamentoControllerTest {
 	private PagamentoRepositorio pagamentorepositorio;
 
 	@Test
-	void testeIncluirPagamento() {
+	void testSalvar() {
 
 		try {
 			Pagamento novopagamento = new Pagamento();

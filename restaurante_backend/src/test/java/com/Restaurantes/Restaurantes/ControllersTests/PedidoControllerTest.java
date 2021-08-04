@@ -20,7 +20,7 @@ class PedidoControllerTest {
 	private PedidoController controlador;
 	
 	@Test
-	void testListar() {
+	void testListarpedido() {
 		long expected; 
 		long result;
 		
