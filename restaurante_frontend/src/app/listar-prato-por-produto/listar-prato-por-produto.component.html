@@ -1,0 +1,19 @@
+<div class="container">
+    <p>Listar Prato por produto</p>   
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Codigo do prato</th>
+            <th>Descrição do Prato</th>
+            <th>Contagem</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let pratosPorProdutos of pratoPorProduto">
+            <td>{{pratosPorProdutos.codigoprato}}</td>
+            <td>{{pratosPorProdutos.descricao}}</td>
+            <td>{{pratosPorProdutos.contagem}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
