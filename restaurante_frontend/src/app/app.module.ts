@@ -17,6 +17,8 @@ import { ListarPagamentoClienteComponent } from './listar-pagamento-cliente/list
 import { ListarPratoPorProdutoComponent } from './listar-prato-por-produto/listar-prato-por-produto.component';
 import { ListarClientesOrdemAlfaComponent } from './listar-clientes-ordem-alfa/listar-clientes-ordem-alfa.component';
 import { QuantidadePratosPorPedidoComponent } from './quantidade-pratos-por-pedido/quantidade-pratos-por-pedido.component';
+import { ListarSetorComponent } from './listar-setor/listar-setor.component';
+import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { QuantidadePratosPorPedidoComponent } from './quantidade-pratos-por-pedi
     ListarPratoPorProdutoComponent,
     ListarClientesOrdemAlfaComponent,
     QuantidadePratosPorPedidoComponent,
+    ListarSetorComponent,
+    IncluirSetorComponent,
 
   ],
   imports: [
