@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
+import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { ListarClientesOrdemAlfaComponent } from './listar-clientes-ordem-alfa/listar-clientes-ordem-alfa.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
+import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { ListarPagamentoClienteComponent } from './listar-pagamento-cliente/listar-pagamento-cliente.component';
 import { ListarPratoPorProdutoComponent } from './listar-prato-por-produto/listar-prato-por-produto.component';
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
@@ -28,7 +30,9 @@ const routes: Routes = [
 {path: 'listarpagamentocliente', component: ListarPagamentoClienteComponent},
 {path: 'listarpratoporproduto', component: ListarPratoPorProdutoComponent},
 {path: 'listarclientesordem', component: ListarClientesOrdemAlfaComponent},
-{path: 'quantidadepratosporpedido', component: QuantidadePratosPorPedidoComponent}
+{path: 'quantidadepratosporpedido', component: QuantidadePratosPorPedidoComponent},
+{path: 'listarfuncionario', component: ListarFuncionarioComponent},
+{path: 'incluirfuncionario', component: IncluirFuncionarioComponent}
 
 
 ];

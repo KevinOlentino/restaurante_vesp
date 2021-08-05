@@ -12,4 +12,8 @@ export class FuncionarioService {
   listarfuncionario(): Observable<any>{
     return this._cliente.get<Funcionario[]>("http://localhost:8080/funcionario/listar")
   }
+
+  incluir(funcionario:Funcionario): Observable<any>{
+    return this._cliente.post<Funcionario>("http://localhost:8080/funcionario/incluir", funcionario);
+  }
 }
