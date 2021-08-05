@@ -35,7 +35,7 @@ const routes: Routes = [
 {path: 'listarclientesordem', component: ListarClientesOrdemAlfaComponent},
 {path: 'quantidadepratosporpedido', component: QuantidadePratosPorPedidoComponent},
 {path: 'listarfuncionario', component: ListarFuncionarioComponent},
-{path: 'incluirfuncionario', component: IncluirFuncionarioComponent}
+{path: 'incluirfuncionario', component: IncluirFuncionarioComponent},
 {path: 'incluirsetor', component: IncluirSetorComponent},
 {path: 'listarsetor', component: ListarSetorComponent}
 
