@@ -1,0 +1,23 @@
+<div class="container">
+
+    <h1>Lista de Setorres</h1>       
+
+    <div id="demo" class="collapse"></div>
+    <table class="table table-light table-striped">
+      <thead>
+        <tr>
+          <th>Código:</th>
+          <th>Nome:</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let setor of setores">
+          <td>{{ setor.codigosetor }}</td>
+          <td>{{ setor.nome }}</td>
+        </tr>
+      </tbody>
+      <br><br>
+        <td><a class="btn btn-primary" href="#" role="button"> Voltar Principal</a></td>
+    </table>
+  </div>
