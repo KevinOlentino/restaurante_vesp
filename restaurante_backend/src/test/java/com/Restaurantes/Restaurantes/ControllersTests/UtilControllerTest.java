@@ -11,15 +11,20 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.Restaurantes.Restaurantes.controller.PratoController;
 import com.Restaurantes.Restaurantes.controller.UtilController;
+import com.Restaurantes.Restaurantes.entity.Faturamento;
 import com.Restaurantes.Restaurantes.entity.Pedido;
 import com.Restaurantes.Restaurantes.entity.Prato;
 import com.Restaurantes.Restaurantes.repositorio.ClienteRepositorio;
+import com.Restaurantes.Restaurantes.repositorio.FaturamentoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.PedidoRepositorio;
 import com.Restaurantes.Restaurantes.repositorio.PratoRepositorio;
 
 @SpringBootTest
 class UtilControllerTest {
 
+	@Autowired
+	private FaturamentoRepositorio faturamentoRepositorio;
+	
 	@Autowired
 	private UtilController utilcontroller;
 	
@@ -182,8 +187,14 @@ class UtilControllerTest {
 	void testfaturamento() {
 		double expected;
 		double result;
+		double soma = 0;
 		
-		expected = 625.02;
+		List<Faturamento> lista = faturamentoRepositorio.findAll();
+		for(Faturamento f: lista) {
+			soma += f.getValorpago();
+		}
+		
+		expected = soma;
 		result = utilcont.totalFaturamento();
 		assertThat(result).isEqualTo(expected);
 	}

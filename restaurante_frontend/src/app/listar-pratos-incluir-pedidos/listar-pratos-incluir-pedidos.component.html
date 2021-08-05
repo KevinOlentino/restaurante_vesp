@@ -18,16 +18,25 @@
     </table>
 </div>
 
+
+
 <p>&nbsp; Incluir Pedido</p>
 <br>
 <div class="container">
     <form method="post" #frm="ngForm" (ngSubmit) = "incluir(frm)">
      
-        
+        <div class="form-group">
+            <label for="codigofuncionario">Selecione o Atendente:</label>
+            <select name="codigofuncionario" id="codigofuncionario" class="form-control" placeholder="Codigo do cliente"
+            [(ngModel)] = "pedido.codigofuncionario" >
+            <option *ngFor="let f of funcionarios" value="{{f.codigo}}">{{f.nome}}</option>
+            </select>
+        </div>
+
         <div class="form-group">
             <label for="codigocliente">Selecione o cliente:</label>
             <select name="codigocliente" id="codigocliente" class="form-control" placeholder="Codigo do cliente"
-            [(ngModel)] = "pedido.codigocliente" >
+            [(ngModel)] = "pedido.codigoCliente" >
             <option *ngFor="let cliente of clientes" value="{{cliente.codigocliente}}">{{cliente.nome}}</option>
             </select>
         </div>
@@ -35,7 +44,7 @@
         <div class="form-group">
             <label for="codprato">Selecione o prato: </label>
             <select name="codprato" id="codprato" class="form-control" placeholder="Codigo do prato"
-            [(ngModel)] = "pedido.codigoprato" >
+            [(ngModel)] = "pedido.codigoPrato" >
             <option *ngFor="let prato of pratos" value="{{prato.codprato}}">{{prato.descricao}}</option>
             </select>
         </div>
@@ -53,14 +62,14 @@
             [(ngModel)] = "pedido.preco" required>
             &nbsp; 
         </div>
-    
+
+        <button type="submit" class="btn btn-primary" [disabled]="frm.invalid" value="Incluir">
+            Incluir pedido
+        </button>
+        <br>
         <input type="hidden" name="pronto" id="pronto" value="false" class="form-control" placeholder="pronto"
             [(ngModel)] = "pedido.pronto" required>
             &nbsp; 
-
-        <button type="submit" class="btn btn-primary" [disabled]="frm.invalid">
-            Incluir
-        </button>
 
     </form>
 </div>

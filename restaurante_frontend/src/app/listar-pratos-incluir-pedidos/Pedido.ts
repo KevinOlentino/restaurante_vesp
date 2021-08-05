@@ -1,7 +1,8 @@
 export interface Pedido{
-    codigopedido: number;
-    codigoprato: number;
-    codigocliente: number;
+    codigoPedido: number;
+    codigoPrato: number;
+    codigoCliente: number;
+    codigofuncionario: number;
     quantidade: number;
     preco: number;
     pronto: boolean;

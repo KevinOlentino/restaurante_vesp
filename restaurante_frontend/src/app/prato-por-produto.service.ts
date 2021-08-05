@@ -13,7 +13,7 @@ export class PratoPorProdutoService {
 
   listarPratoPorProduto(): Observable<any>{
 
-    return this.http.get<ViewPratoPorProduto[]>("http://localhost:8080/views3/listarpratoporproduto");
+    return this.http.get<ViewPratoPorProduto[]>("http://localhost:8080/views/listarpratoporproduto");
                                                   
   }
 }

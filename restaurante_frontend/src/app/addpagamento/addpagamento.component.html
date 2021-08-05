@@ -6,7 +6,11 @@
 
         <div class="form-group">
             <label for="codigopedido">Código do pedido:</label>
-            <input type="text" id="codigopedido" name="codigopedido" class="form-control" placeholder="Código do pedido"[(ngModel)] = "pagamento.codigopedido" required />
+            <select id="codigopedido" name="codigopedido" class="form-control" placeholder="Código do pedido"  
+            [(ngModel)] = "pagamento.codigopedido" required>
+
+            <option *ngFor="let pedido of pedidos" value="{{pedido.codigoPedido}}">{{pedido.codigoPedido}}</option>
+             </select>
         </div>
 
         <div class="form-group">

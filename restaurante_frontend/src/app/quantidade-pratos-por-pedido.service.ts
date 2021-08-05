@@ -11,6 +11,6 @@ export class QuantidadePratosPorPedidoService {
   constructor(private _http:HttpClient) { }
 
   quantidadepratosporpedido(): Observable<any>{
-    return this._http.get<QuantidadePratosPorPedido[]>("http://localhost:8080/views1/listaqntpratosporpedido");
+    return this._http.get<QuantidadePratosPorPedido[]>("http://localhost:8080/views/listaqntpratosporpedido");
   }
 }

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Cliente } from 'src/app/entities/Cliente';
 import { ClienteService } from '../cliente.service';
+import { Funcionario } from '../entities/Funcionario';
+import { FuncionarioService } from '../funcionario.service';
 import { PedidoService } from '../pedido.service';
 import { PratoService } from '../prato.service';
 import { Pedido } from './Pedido';
@@ -16,11 +18,13 @@ export class ListarPratosIncluirPedidosComponent implements OnInit {
 
   pratos: Prato[]=[];
   clientes: Cliente[]=[];
-  pedido: Pedido={codigopedido: 0, codigoprato: 0, codigocliente: 0, quantidade: 0, preco:0, pronto:false}
+  funcionarios: Funcionario[]=[];
+  pedido: Pedido={codigoPedido: 0, codigoPrato: 0, codigoCliente: 0,codigofuncionario:0, quantidade: 0, preco:0, pronto:false}
   constructor(
     private servicoprato:PratoService, 
     private servicopedido:PedidoService,
-    private servicocliente: ClienteService) { }
+    private servicocliente: ClienteService,
+    private servicofuncionario: FuncionarioService) { }
 
   ngOnInit(): void {
     this.servicoprato.listarPratos().subscribe(
@@ -32,7 +36,10 @@ export class ListarPratosIncluirPedidosComponent implements OnInit {
       dados =>this.clientes = dados,
       error => console.log("Erro na busca do cliente")
     )
-
+    this.servicofuncionario.listarfuncionario().subscribe(
+      dados => this.funcionarios = dados,
+      error => console.log("Erro ao ler funcionarios")
+    )
 
   }
 
