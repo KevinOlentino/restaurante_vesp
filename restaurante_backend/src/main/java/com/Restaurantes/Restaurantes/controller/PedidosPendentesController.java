@@ -14,7 +14,7 @@ import com.Restaurantes.Restaurantes.repositorio.PedidosPendentesRepositorio;
 
 @RestController
 @RequestMapping("pedidospendentes")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins={"http://localhost:4200", "http://localhost:8090"})
 public class PedidosPendentesController {
 	
 	@Autowired

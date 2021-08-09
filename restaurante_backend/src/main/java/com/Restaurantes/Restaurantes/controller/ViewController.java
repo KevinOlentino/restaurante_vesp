@@ -18,7 +18,7 @@ import com.Restaurantes.Restaurantes.views.ViewQuantidadePratosPorPedido;
 
 @RestController
 @RequestMapping("views")
-@CrossOrigin( origins={"http://localhost:4200","http://localhost:9876"})
+@CrossOrigin( origins={"http://localhost:4200", "http://localhost:8090","http://localhost:9876"})
 public class ViewController {
 	
 	

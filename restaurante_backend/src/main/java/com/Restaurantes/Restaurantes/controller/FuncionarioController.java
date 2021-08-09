@@ -16,7 +16,7 @@ import com.Restaurantes.Restaurantes.repositorio.FuncionarioRepositorio;
 
 @RestController
 @RequestMapping ("funcionario")
-@CrossOrigin(origins={"http://localhost:4200", "http://localhost:9876"})
+@CrossOrigin(origins={"http://localhost:4200", "http://localhost:8090", "http://localhost:9876"})
 public class FuncionarioController {
 
 	@Autowired
