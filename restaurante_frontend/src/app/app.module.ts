@@ -21,6 +21,8 @@ import { ListarFuncionarioComponent } from './listar-funcionario/listar-funciona
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { ListarSetorComponent } from './listar-setor/listar-setor.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
+import { ListarFornecedorComponent } from './listar-fornecedor/listar-fornecedor.component';
+import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornecedor.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
     ListarFuncionarioComponent,
     IncluirFuncionarioComponent,
     ListarSetorComponent,
-    IncluirSetorComponent
+    IncluirSetorComponent,
+    ListarFornecedorComponent,
+    IncluirFornecedorComponent
 
   ],
   imports: [
