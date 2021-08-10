@@ -45,8 +45,7 @@ const routes: Routes = [
 {path: 'incluirsetor', component: IncluirSetorComponent},
 {path: 'listarsetor', component: ListarSetorComponent},
 {path: 'incluirveiculo', component: IncluirVeiculoComponent},
-{path: 'listarveiculo', component: ListarVeiculoComponent}
-
+{path: 'listarveiculo', component: ListarVeiculoComponent},
 {path: 'listarfornecedor', component: ListarFornecedorComponent},
 {path: 'incluirfornecedor', component: IncluirFornecedorComponent},
 {path: 'listarentrega', component: ListarEntregaComponent},
