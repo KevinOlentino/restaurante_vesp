@@ -21,6 +21,8 @@ import { ListarFuncionarioComponent } from './listar-funcionario/listar-funciona
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { ListarSetorComponent } from './listar-setor/listar-setor.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
+import { ListarVeiculoComponent } from './listar-veiculo/listar-veiculo.component';
+import { IncluirVeiculoComponent } from './incluir-veiculo/incluir-veiculo.component';
 import { ListarFornecedorComponent } from './listar-fornecedor/listar-fornecedor.component';
 import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornecedor.component';
 import { ListarEntregaComponent } from './listar-entrega/listar-entrega.component';
@@ -46,6 +48,8 @@ import { IncluirEntregaComponent } from './incluir-entrega/incluir-entrega.compo
     IncluirFuncionarioComponent,
     ListarSetorComponent,
     IncluirSetorComponent,
+    ListarVeiculoComponent,
+    IncluirVeiculoComponent,
     ListarFornecedorComponent,
     IncluirFornecedorComponent,
     ListarEntregaComponent,

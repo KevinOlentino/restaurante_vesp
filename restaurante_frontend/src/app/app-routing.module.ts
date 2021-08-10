@@ -8,6 +8,7 @@ import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornece
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
+import { IncluirVeiculoComponent } from './incluir-veiculo/incluir-veiculo.component';
 import { ListarClientesOrdemAlfaComponent } from './listar-clientes-ordem-alfa/listar-clientes-ordem-alfa.component';
 import { ListarEntregaComponent } from './listar-entrega/listar-entrega.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
@@ -18,6 +19,7 @@ import { ListarPratoPorProdutoComponent } from './listar-prato-por-produto/lista
 import { ListarPratosIncluirPedidosComponent } from './listar-pratos-incluir-pedidos/listar-pratos-incluir-pedidos.component';
 import { ListarProdutoComponent } from './listar-produto/listar-produto.component';
 import { ListarSetorComponent } from './listar-setor/listar-setor.component';
+import { ListarVeiculoComponent } from './listar-veiculo/listar-veiculo.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { QuantidadePratosPorPedidoComponent } from './quantidade-pratos-por-pedido/quantidade-pratos-por-pedido.component';
@@ -42,6 +44,9 @@ const routes: Routes = [
 {path: 'incluirfuncionario', component: IncluirFuncionarioComponent},
 {path: 'incluirsetor', component: IncluirSetorComponent},
 {path: 'listarsetor', component: ListarSetorComponent},
+{path: 'incluirveiculo', component: IncluirVeiculoComponent},
+{path: 'listarveiculo', component: ListarVeiculoComponent}
+
 {path: 'listarfornecedor', component: ListarFornecedorComponent},
 {path: 'incluirfornecedor', component: IncluirFornecedorComponent},
 {path: 'listarentrega', component: ListarEntregaComponent},
