@@ -18,7 +18,7 @@ public class Entrega {
 	private Integer Codigo;
 	
 	@Column(name="codigocliente")
-	private Integer CodigoCliente;
+	private Integer codigoCliente;
 	
 	@Column(name="endereco")
 	@NotNull
@@ -33,11 +33,11 @@ public class Entrega {
 	}
 
 	public Integer getCodigoCliente() {
-		return CodigoCliente;
+		return codigoCliente;
 	}
 
 	public void setCodigoCliente(Integer codigoCliente) {
-		CodigoCliente = codigoCliente;
+		this.codigoCliente = codigoCliente;
 	}
 
 	public String getEndereco() {
