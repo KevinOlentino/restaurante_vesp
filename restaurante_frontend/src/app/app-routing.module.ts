@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
+import { IncluirEntregaComponent } from './incluir-entrega/incluir-entrega.component';
 import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornecedor.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { ListarClientesOrdemAlfaComponent } from './listar-clientes-ordem-alfa/listar-clientes-ordem-alfa.component';
+import { ListarEntregaComponent } from './listar-entrega/listar-entrega.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
 import { ListarFornecedorComponent } from './listar-fornecedor/listar-fornecedor.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
@@ -41,7 +43,9 @@ const routes: Routes = [
 {path: 'incluirsetor', component: IncluirSetorComponent},
 {path: 'listarsetor', component: ListarSetorComponent},
 {path: 'listarfornecedor', component: ListarFornecedorComponent},
-{path: 'incluirfornecedor', component: IncluirFornecedorComponent}
+{path: 'incluirfornecedor', component: IncluirFornecedorComponent},
+{path: 'listarentrega', component: ListarEntregaComponent},
+{path: 'incluirentrega', component: IncluirEntregaComponent}
 
 ];
 
