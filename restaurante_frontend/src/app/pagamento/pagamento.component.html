@@ -1,0 +1,12 @@
+<p>pagamento works!</p>
+
+<form method="POST" #frm="ngForm" (ngSubmit)="excluir(frm)">
+    <div class="form-group">
+        <label for="id">Digite o codigo do pagamento a ser excluido: </label>
+        <input type="text" id="id" name="id" class="form-control" placeholder="id" required [(ngModel)] = "pagamento.codigopagamento" />
+    </div>
+
+    <input type="submit" />
+</form>
+
+

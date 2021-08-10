@@ -27,6 +27,7 @@ import { ListarFornecedorComponent } from './listar-fornecedor/listar-fornecedor
 import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornecedor.component';
 import { ListarEntregaComponent } from './listar-entrega/listar-entrega.component';
 import { IncluirEntregaComponent } from './incluir-entrega/incluir-entrega.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { IncluirEntregaComponent } from './incluir-entrega/incluir-entrega.compo
     ListarFornecedorComponent,
     IncluirFornecedorComponent,
     ListarEntregaComponent,
-    IncluirEntregaComponent
+    IncluirEntregaComponent,
+    PagamentoComponent
 
   ],
   imports: [
