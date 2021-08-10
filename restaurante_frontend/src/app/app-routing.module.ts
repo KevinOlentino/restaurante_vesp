@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddclienteComponent } from './addcliente/addcliente.component';
 import { AddpagamentoComponent } from './addpagamento/addpagamento.component';
 import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
+import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornecedor.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { IncluirPratosComponent } from './incluir-pratos/incluir-pratos.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirVeiculoComponent } from './incluir-veiculo/incluir-veiculo.component';
 import { ListarClientesOrdemAlfaComponent } from './listar-clientes-ordem-alfa/listar-clientes-ordem-alfa.component';
 import { ListarFaturamentoComponent } from './listar-faturamento/listar-faturamento.component';
+import { ListarFornecedorComponent } from './listar-fornecedor/listar-fornecedor.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { ListarPagamentoClienteComponent } from './listar-pagamento-cliente/listar-pagamento-cliente.component';
 import { ListarPratoPorProdutoComponent } from './listar-prato-por-produto/listar-prato-por-produto.component';
@@ -43,6 +45,8 @@ const routes: Routes = [
 {path: 'incluirveiculo', component: IncluirVeiculoComponent},
 {path: 'listarveiculo', component: ListarVeiculoComponent}
 
+{path: 'listarfornecedor', component: ListarFornecedorComponent},
+{path: 'incluirfornecedor', component: IncluirFornecedorComponent}
 
 ];
 

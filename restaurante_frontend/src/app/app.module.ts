@@ -23,6 +23,8 @@ import { ListarSetorComponent } from './listar-setor/listar-setor.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { ListarVeiculoComponent } from './listar-veiculo/listar-veiculo.component';
 import { IncluirVeiculoComponent } from './incluir-veiculo/incluir-veiculo.component';
+import { ListarFornecedorComponent } from './listar-fornecedor/listar-fornecedor.component';
+import { IncluirFornecedorComponent } from './incluir-fornecedor/incluir-fornecedor.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { IncluirVeiculoComponent } from './incluir-veiculo/incluir-veiculo.compo
     ListarSetorComponent,
     IncluirSetorComponent,
     ListarVeiculoComponent,
-    IncluirVeiculoComponent
+    IncluirVeiculoComponent,
+    ListarFornecedorComponent,
+    IncluirFornecedorComponent
 
   ],
   imports: [
