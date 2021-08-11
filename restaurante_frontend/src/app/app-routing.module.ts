@@ -21,6 +21,7 @@ import { ListarProdutoComponent } from './listar-produto/listar-produto.componen
 import { ListarSetorComponent } from './listar-setor/listar-setor.component';
 import { ListarVeiculoComponent } from './listar-veiculo/listar-veiculo.component';
 import { ListarpratoprontoComponent } from './listarpratopronto/listarpratopronto.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { QuantidadePratosPorPedidoComponent } from './quantidade-pratos-por-pedido/quantidade-pratos-por-pedido.component';
 import { SetorService } from './setor.service';
@@ -46,11 +47,15 @@ const routes: Routes = [
 {path: 'listarsetor', component: ListarSetorComponent},
 {path: 'incluirveiculo', component: IncluirVeiculoComponent},
 {path: 'listarveiculo', component: ListarVeiculoComponent},
+<<<<<<< HEAD
 
+=======
+>>>>>>> d50de3f204094ae3ee58fa733c7c127e49dd7bf1
 {path: 'listarfornecedor', component: ListarFornecedorComponent},
 {path: 'incluirfornecedor', component: IncluirFornecedorComponent},
 {path: 'listarentrega', component: ListarEntregaComponent},
-{path: 'incluirentrega', component: IncluirEntregaComponent}
+{path: 'incluirentrega', component: IncluirEntregaComponent},
+{path: 'excluirpagamento', component:PagamentoComponent}
 
 ];
 
