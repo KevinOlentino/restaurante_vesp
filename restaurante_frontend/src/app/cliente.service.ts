@@ -11,7 +11,7 @@ export class ClienteService {
   constructor(private _http: HttpClient) { }
 
   listarClientes(): Observable<any>{
-    return this._http.get<Cliente[]>("http://localhost:8080/cliente/listar");
+    return this._http.get<Cliente[]>("https://localhost:44362/api/cliente");
   }
 
 }
