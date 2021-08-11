@@ -47,10 +47,6 @@ const routes: Routes = [
 {path: 'listarsetor', component: ListarSetorComponent},
 {path: 'incluirveiculo', component: IncluirVeiculoComponent},
 {path: 'listarveiculo', component: ListarVeiculoComponent},
-<<<<<<< HEAD
-
-=======
->>>>>>> d50de3f204094ae3ee58fa733c7c127e49dd7bf1
 {path: 'listarfornecedor', component: ListarFornecedorComponent},
 {path: 'incluirfornecedor', component: IncluirFornecedorComponent},
 {path: 'listarentrega', component: ListarEntregaComponent},
