@@ -13,7 +13,7 @@ public class ViewQuantidadePratosPorPedido {
 	
 	@Id
 	@GeneratedValue( strategy = GenerationType.IDENTITY)
-	@Column(name="codigpedido")
+	@Column(name="codigopedido")
 	private int codigoPedido;
 	
 	@Column(name="quantidadepratospedidos")

@@ -3,18 +3,16 @@ package com.Restaurantes.Restaurantes.entity;
 public class ClienteLogin {
 
 
-	private Integer codCliente;
-	
+	private String userName;
 
 	private String senha;
-	
-	
-	public Integer getCodCliente() {
-		return codCliente;
+
+	public String getUserName() {
+		return userName;
 	}
 
-	public void setCodCliente(Integer codCliente) {
-		this.codCliente = codCliente;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getSenha() {
